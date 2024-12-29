@@ -1,0 +1,236 @@
+/*^ CUSTOM CSS ********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+   font-family: "Roboto Flex", serif;
+    font-style: normal;
+}
+
+
+
+main {
+  min-height: 80vh;
+}
+
+.purple-brick-bg {
+  background-image: url("/images/purple-brick-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.purple-text{
+  color: #1B0B1D;
+}
+
+/*^ HEADER *********************************/
+
+header {
+  background-color: #37163B ;
+  color: #E3DDE1;
+}
+
+.nav-text {
+  color: #E3DDE1 !important;
+}
+
+.logo {
+  width: 100%;
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+/*^ FOOTER *********************************/
+
+footer {
+  background-color: #212121;
+  color: #808080;
+}
+
+.social-media-link {
+  color: #808080;
+  transition: color ease-in-out 0.3s;
+}
+.social-media-link:hover {
+  color: #ffffff;
+}
+
+/*^ HERO ***********************************/
+
+#hero-section {
+  background: linear-gradient(to top,  #1B0B1D, #37163B );
+  color: #f9f9f9;
+}
+
+.call-to-action{
+  font-size: 24px;;
+}
+
+.hero-img{
+  height: 600px;
+}
+
+/*^ BOOKING *********************************/
+
+#booking {
+     background: linear-gradient(to top,  #efefef, #f9f9f9 );
+  color: #212121;
+}
+
+
+
+.paypal-link {
+    width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFB800;
+  border: 1px solid #FFB800;
+  border-radius: 5px;
+  padding: 10px 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.paypal-link:hover {
+  background-color: #FF9D00;
+  border-color: #005f8f;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.paypal-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.paypal-name {
+  width: 100px;
+}
+
+.paypal-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 120, 186, 0.5);
+}
+
+/*^ BANNER ***********************************/
+
+#banner{
+    text-align: center;
+}
+#banner p{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/*^ INSTAGRAM FEED *****************************/
+
+#instagram{
+  background: linear-gradient(to top,  #212121, #37163B );
+}
+.instagram-media {
+  background-color: #fff;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  margin: 1px;
+  min-width: 326px;
+  padding: 0;
+  width: 99.375%;
+  width: -webkit-calc(100% - 2px);
+  width: calc(100% - 2px);
+}
+
+
+
+/*^ GALLERY ************************/
+
+#gallery {
+   background: linear-gradient(to top, #37163B, #1B0B1D);
+  color: #f9f9f9;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px; /* Optional: Adds padding around the gallery */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width/height */
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(219, 58, 52, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; 
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(219, 58, 52, 0.7);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Dim background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.pulse-button {
+  display: inline-block; 
+  background-color: #CC0000;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none; 
+  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.pulse-button:hover {
+  transform: scale(1.1);
+  background-color: #A30000;
+}
+
+.book-today {
+  max-width: 400px;
+  display: block; 
+  width: 100%; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
